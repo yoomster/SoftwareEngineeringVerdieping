@@ -7,9 +7,8 @@ public class Program
         CarModel Car = new CarModel();
         bool driving = true;
 
-        Car.SetManufacturer("Kip");
+        Car.SetManufacturer("Tesla");
         Car.SetModel("Cross");
-        Car.SetMaxSpeed();
 
         do
         {

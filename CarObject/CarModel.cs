@@ -13,10 +13,11 @@ namespace CarProject
         private int Speed { get; set; }
         private int MaxSpeed { get; set; }
 
-
+    
         public void SetManufacturer(string manufacturer)
         {
             Manufacturer = manufacturer;
+            SetMaxSpeed();
         }
         public void SetMaxSpeed()
         {
