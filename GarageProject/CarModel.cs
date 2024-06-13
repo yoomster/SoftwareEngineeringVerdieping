@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace GarageProject
 {
-    internal class CarModel
+    public class CarModel
     {
         private string? Manufacturer { get; set; }
         private string? Model { get; set; }
         private int Speed { get; set; }
         private int MaxSpeed { get; set; }
 
-        public void SetBrand(string brand)
+        public void SetManufacturer(string brand)
         {
             Manufacturer = brand;
         }
@@ -57,7 +57,7 @@ namespace GarageProject
             }
         }
 
-        public string GetCarModel()
+        public string GetCarManufacturerAndModel()
         {
             return $"{Manufacturer} – {Model}";
         }

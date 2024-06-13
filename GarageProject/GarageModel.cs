@@ -6,23 +6,30 @@ using System.Threading.Tasks;
 
 namespace GarageProject
 {
-    internal class GarageModel
+    public class GarageModel
     {
-        private List<CarModel> cars = new List<CarModel>();
+        public string Name { get; set; }
+        public CarModel? ChosenCar { get; set; }
+
+        public List<CarModel> Cars = new List<CarModel>();
 
         public void AddCar(CarModel car)
         {
-            cars.Add(car);
+            Cars.Add(car);
         }
 
         public List<CarModel> ShowCars()
         {
-            return cars;
+            return Cars;
         }
 
-        public CarModel SelectCar(string car)
+        public void SelectCar(CarModel car)
         {
-            return car;
+            ChosenCar = car;
         }
     }
 }
+
+//show all the cars that are in garage
+//select 1 car, that you choose to drive
+//by clicking start drive, open new form to drive the chosen car
