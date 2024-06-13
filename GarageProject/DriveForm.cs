@@ -12,10 +12,16 @@ namespace GarageProject
 {
     public partial class DriveForm : Form
     {
-        CarModel Car;
+        private CarModel car;
         public DriveForm()
         {
             InitializeComponent();
+            GetSelectedCar();
+        }
+
+        private void GetSelectedCar()
+        {
+
         }
 
         private void buttonBrake_Click(object sender, EventArgs e)
@@ -25,12 +31,12 @@ namespace GarageProject
 
         private void buttonDrive_Click(object sender, EventArgs e)
         {
-            Car.SpeedUp();
+            car.SpeedUp();
         }
 
         private void DriveForm_Load(object sender, EventArgs e)
         {
-            labelCarInfo.Text = Car.GetInfo();
+            labelCarInfo.Text = car.GetInfo();
         }
     }
 }
