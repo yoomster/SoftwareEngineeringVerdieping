@@ -19,7 +19,7 @@ namespace TrafficLight
 
         public void NextState()
         {
-            if (Colour == ColourEnum.Groen)
+            if (Colour == ColourEnum.Oranje)
             {
                 Colour = ColourEnum.Rood;
             }

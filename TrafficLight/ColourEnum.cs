@@ -9,7 +9,7 @@ namespace TrafficLight
     public enum ColourEnum
     {
         Rood = 0,
-        Oranje = 1,
-        Groen = 2
+        Groen = 1,
+        Oranje = 2
     }
 }
