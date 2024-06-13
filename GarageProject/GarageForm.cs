@@ -32,7 +32,7 @@ namespace GarageProject
 
         private void SaveSelectedCar()
         {
-            garage.SelectCar(listBoxCars.SelectedItem);
+            garage.ChosenCar = listBoxCars.SelectedItem;
         }
 
         private void InitializeGarage()

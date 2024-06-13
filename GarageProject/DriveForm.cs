@@ -12,7 +12,7 @@ namespace GarageProject
 {
     public partial class DriveForm : Form
     {
-        private CarModel car;
+        private readonly CarModel _car;
         public DriveForm()
         {
             InitializeComponent();
@@ -31,12 +31,12 @@ namespace GarageProject
 
         private void buttonDrive_Click(object sender, EventArgs e)
         {
-            car.SpeedUp();
+            _car.SpeedUp();
         }
 
         private void DriveForm_Load(object sender, EventArgs e)
         {
-            labelCarInfo.Text = car.GetInfo();
+            labelCarInfo.Text = _car.GetInfo();
         }
     }
 }
